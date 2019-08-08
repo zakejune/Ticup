@@ -25,7 +25,7 @@ while(True):
     sensor.set_pixformat(sensor.RGB565)#色彩图
     for i in range(10):
         img = sensor.snapshot()
-        for j in range(100):
+        for j in range(100):≠
             x = (pyb.rng() % (2*img.width())) - (img.width()//2)
             y = (pyb.rng() % (2*img.height())) - (img.height()//2)
             img.set_pixel(x, y, (255, 255, 255))
